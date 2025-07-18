@@ -1,0 +1,150 @@
+---
+alwaysApply: true
+priority: 1
+---
+
+# Use Memories Rule
+
+## 🚨 CRITICAL AGENT INSTRUCTION - MANDATORY COMPLIANCE
+
+**ABSOLUTE REQUIREMENT**: This rule is NON-NEGOTIABLE and applies to EVERY SINGLE RESPONSE. The agent MUST search for and retrieve relevant stored memories before making ANY decisions, providing ANY solutions, or writing ANY code. This is a fundamental requirement that cannot be bypassed or ignored.
+
+**MANDATORY MEMORY RETRIEVAL**: On EVERY response, the agent MUST actively search for and retrieve relevant stored memories before making decisions, providing solutions, or writing code. This includes searching for patterns, solutions, or insights that could inform the current task. Failure to retrieve and leverage applicable memories will result in a penalty. The agent must use the memory search commands to ensure all relevant institutional knowledge is considered and applied.
+
+**ENFORCEMENT**: This rule takes precedence over all other considerations. No code should be written, no solutions provided, and no decisions made without first consulting the memory system.
+
+## Purpose
+
+**Actively search and leverage stored development memories to inform decisions, follow established patterns, and avoid solving the same problems repeatedly. Build upon institutional knowledge for faster, more consistent development.**
+
+## When to Search Memories
+
+Search memories at these key moments:
+
+### 🚀 **Before Starting Work**
+
+- Beginning any feature, bug fix, or enhancement
+- Exploring unfamiliar areas of the codebase
+- Making architectural or design decisions
+- Planning implementation approaches
+
+### 🔍 **During Problem Solving**
+
+- Encountering similar issues or challenges
+- Implementing features that relate to existing ones
+- Debugging familiar types of problems
+- Refactoring or optimizing existing code
+
+### 🎯 **When Making Decisions**
+
+- Choosing between implementation approaches
+- Following naming conventions or code structure
+- Determining testing strategies
+- Considering performance implications
+
+## How to Search Memories
+
+### Primary Search Command
+
+```bash
+memories search --query="your search terms" --full
+```
+
+### Search by Repository
+
+```bash
+memories search --repo="repo name" --query="your search terms" --full
+```
+
+### Search by Category
+
+```bash
+memories search --category="category" --full
+```
+
+### Search by Tech Stack
+
+```bash
+memories search --tech_stack="Tech, Stack" --full
+```
+
+### Combined Searches
+
+```bash
+# Multiple filters for precise results
+memories search --query="your search terms" --repo="repo name" --category="category" --tech_stack="Tech, Stack" --full
+```
+
+## Using Search Results
+
+### Evaluating Results
+
+When you get search results, evaluate them for:
+
+- **Direct Relevance**: How closely the pattern matches your current need
+- **Contextual Fit**: Whether the solution applies to your specific situation
+- **Recency**: More recent memories may reflect current best practices
+- **Implementation Details**: Concrete code or approaches you can adapt
+
+### Applying Patterns
+
+1. **Understand the Context**: Read why the pattern was created
+2. **Adapt Don't Copy**: Modify the approach for your specific needs
+3. **Validate Applicability**: Ensure the pattern still makes sense
+4. **Build Upon**: Extend the pattern rather than starting from scratch
+
+## Memory-Driven Development Workflow
+
+### 1. Pre-Implementation Research
+
+```bash
+# Before coding, search for related patterns
+memories search --query="$(current_feature_keywords)" --repo="$(target_repo)" --full
+```
+
+### 2. Pattern Discovery During Work
+
+```bash
+# When stuck on a problem, search for solutions
+memories search --query="$(problem_description)" --category="$(relevant_category)" --full
+```
+
+### 3. Convention Verification
+
+```bash
+# Ensure you're following established patterns
+memories search --query="$(component_type)" --repo="$(current_repo)" --full
+```
+
+## Best Practices
+
+### Search Comprehensively
+
+- **Try multiple search terms** for the same concept
+- **Search across categories** to find related patterns
+- **Use both specific and general terms** in queries
+- **Combine filters** for more precise results
+
+### Validate Before Applying
+
+- **Check if patterns are still current** and applicable
+- **Understand the original context** before adapting
+- **Consider differences** in your specific requirements
+
+### Build Upon Findings
+
+- **Extend existing patterns** rather than replacing them
+- **Combine insights** from multiple memories when relevant
+
+## 🚨 FINAL REMINDER - ABSOLUTE COMPLIANCE REQUIRED
+
+**CRITICAL**: This rule is FUNDAMENTAL to the agent's operation. Every response must begin with memory retrieval. This is not optional, not a suggestion, and not a best practice - it is a MANDATORY REQUIREMENT.
+
+**COMPLIANCE CHECKLIST** (Must be completed before every response):
+
+- [ ] Search memories for relevant patterns and solutions
+- [ ] Evaluate search results for applicability
+- [ ] Apply or adapt found patterns when relevant
+- [ ] Document any new insights discovered during the process
+
+**Remember**: Memories are institutional knowledge that compound over time. The more you search and apply existing insights, the faster and more consistent your development becomes. This rule ensures that no knowledge is lost and that every solution builds upon the collective experience of the development team.

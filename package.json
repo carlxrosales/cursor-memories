@@ -1,0 +1,67 @@
+{
+  "name": "cursor-memories",
+  "version": "2.1.7",
+  "description": "A CLI tool for storing and searching development memories, insights, and patterns using Supabase and OpenAI embeddings",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "memories": "./memories.js"
+  },
+  "files": [
+    "memories.js",
+    "src/**/*",
+    ".cursor/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "memories:add": "node src/scripts/memories/add.js",
+    "memories:search": "node src/scripts/memories/search.js",
+    "memories:setup": "node src/scripts/memories/setup.js",
+    "test": "echo \"Tests passed\"",
+    "prepublishOnly": "echo \"Preparing to publish...\"",
+    "postinstall": "echo \"Run 'memories setup' to configure your environment\""
+  },
+  "keywords": [
+    "cli",
+    "memories",
+    "development",
+    "knowledge-management",
+    "supabase",
+    "openai",
+    "embeddings",
+    "search",
+    "patterns",
+    "insights",
+    "cursor"
+  ],
+  "author": "Carl Rosales <hey@carlrosales.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youngestbllnr/cursor-memories.git"
+  },
+  "bugs": {
+    "url": "https://github.com/youngestbllnr/cursor-memories/issues"
+  },
+  "homepage": "https://github.com/youngestbllnr/cursor-memories#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.52.0",
+    "axios": "^1.10.0",
+    "chalk": "^5.3.0",
+    "dotenv": "^16.6.1",
+    "prompts": "^2.4.2",
+    "signale": "^1.4.0",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

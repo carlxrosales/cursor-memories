@@ -1,0 +1,65 @@
+# Dependencies (automatically ignored by npm, but explicit for clarity)
+node_modules/
+
+# Development files
+.git/
+.gitignore
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test files
+test/
+tests/
+__tests__/
+*.test.js
+*.spec.js
+
+# Documentation (except README.md which is included)
+docs/
+*.md
+!README.md
+
+# Build files
+dist/
+build/
+coverage/
+
+# Temporary files
+tmp/
+temp/
+
+# Package manager files
+package-lock.json
+yarn.lock
+
+# Cache files
+.npm
+.eslintcache
+.cache
+.parcel-cache
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock 

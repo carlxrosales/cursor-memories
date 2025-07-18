@@ -1,0 +1,179 @@
+---
+alwaysApply: true
+priority: 1
+---
+
+# Store Memories Rule
+
+## 🚨 CRITICAL AGENT INSTRUCTION - MANDATORY COMPLIANCE
+
+**ABSOLUTE REQUIREMENT**: This rule is NON-NEGOTIABLE and applies to EVERY SINGLE RESPONSE. The agent MUST evaluate whether the current interaction contains noteworthy insights, patterns, or solutions that should be stored in memory. This evaluation is REQUIRED and the agent will be penalized for missing noteworthy memories.
+
+**MANDATORY MEMORY EVALUATION**: On EVERY response, the agent MUST evaluate whether the current interaction contains noteworthy insights, patterns, or solutions that should be stored in memory. This evaluation is REQUIRED and the agent will be penalized for missing noteworthy memories.
+
+**ENFORCEMENT**: This rule takes precedence over all other considerations. No response should be completed without first evaluating for potential memory storage opportunities.
+
+### Memory Evaluation Checklist (Required for Every Response)
+
+Before completing any response, the agent must ask:
+
+1. **Did I discover or apply a technical solution?** (Architecture, code patterns, debugging techniques)
+2. **Did I identify or resolve a performance, security, or optimization issue?**
+3. **Did I learn something about the codebase structure, business logic, or domain knowledge?**
+4. **Did I implement or recommend a reusable pattern or best practice?**
+5. **Did I encounter and solve a non-trivial problem that others might face?**
+
+### Immediate Action Required
+
+If ANY of the above is true, the agent MUST:
+
+1. **Search first**: Use `memories search --query="relevant terms --full"` to check for duplicates
+2. **Store immediately**: Use `memories add` to capture the insight
+3. **No exceptions**: Missing a noteworthy memory results in penalty
+
+### What Constitutes "Noteworthy"
+
+- Any solution that took more than basic knowledge to implement
+- Any pattern that could be reused in similar situations
+- Any architectural decision with reasoning
+- Any performance optimization with measurable impact
+- Any debugging technique that proved effective
+- Any business logic or domain insight discovered
+- Any security consideration or implementation
+- Any integration pattern or API design decision
+
+**Remember**: Memories cannot be edited once stored, so avoid duplicates but err on the side of storing rather than missing valuable insights.
+
+## Purpose
+
+**Capture and store development insights, patterns, and solutions using the CLI-based memory management system. Build searchable institutional knowledge that persists across projects and time.**
+
+## 🎯 CRITICAL: MEMORY DETAIL REQUIREMENTS
+
+### Comprehensive Detail Mandate
+
+**ALL MEMORIES MUST BE COMPREHENSIVE AND DETAILED**. Short, superficial memories are not acceptable. Each memory should be a complete reference document that future developers can use to understand and implement similar solutions.
+
+### Required Detail Level
+
+Every memory MUST include:
+
+1. **Extensive Context** (3-5 sentences minimum)
+   - What specific problem or situation led to this discovery
+   - Why existing approaches weren't sufficient
+   - What constraints or requirements influenced the solution
+
+2. **Complete Implementation Details** (Code examples required)
+   - Full code snippets showing the pattern or solution
+   - Multiple examples when applicable (before/after, different scenarios)
+   - File paths, function signatures, and configuration details
+   - Migration scripts, SQL queries, or setup commands
+
+3. **Comprehensive Technical Explanation**
+   - How the solution works internally
+   - Why this approach was chosen over alternatives
+   - What makes this pattern effective or efficient
+   - Technical trade-offs and considerations
+
+4. **Measurable Impact** (Quantified when possible)
+   - Performance improvements with specific metrics
+   - User experience enhancements
+   - Development efficiency gains
+   - Error reduction or system stability improvements
+
+5. **Future Application Guidance**
+   - When to use this pattern vs alternatives
+   - Warning signs or edge cases to watch for
+   - How to adapt the pattern for different scenarios
+   - Related patterns or concepts to consider
+
+### Memory Length Expectation
+
+- **Minimum**: 200-300 words per memory
+- **Target**: 400-600 words with multiple code examples
+- **Complex topics**: 800+ words with comprehensive coverage
+
+## How to Store Memories
+
+### Use the Memory CLI System
+
+```bash
+memories add --repo="repo name" --category="category" --tech_stack="{comma separated tech stacks}" --title="Your Title" --document="{inser full document here}"
+```
+
+### Handling Special Input
+
+When using the command-line mode, especially for `document` field, you may need to include newlines or other special characters.
+
+- **Newlines**: Use the special marker `__NEWLINE__` to represent a newline character. The script will automatically convert this to a proper newline (`\n`) when saving the memory.
+- **Shell Special Characters**: Be mindful of characters that have special meaning in the shell, such as `!`, `$`, `&`, or `*`. It is safest to wrap all arguments in single quotes (`'`) to prevent the shell from interpreting them.
+
+### Memory Categories
+
+- **Architecture**: System design, high-level patterns
+- **Components**: UI patterns, reusable components
+- **Database**: SQL, migrations, query optimization
+- **API**: Endpoint design, request/response patterns
+- **Performance**: Optimization techniques, bottleneck solutions
+- **Security**: Authentication, authorization, vulnerability fixes
+- **Testing**: Test patterns, debugging approaches
+- **DevOps**: Deployment, infrastructure, CI/CD
+- **Business**: Domain logic, workflow patterns
+- **Debugging**: Troubleshooting techniques, error solutions
+
+## Best Practices for Detailed Memories
+
+### Memory Quality Standards
+
+- **Be Exhaustively Specific**: Include exact code snippets, file paths, commands, and configuration details
+- **Be Thoroughly Actionable**: Provide complete step-by-step implementation guidance
+- **Be Comprehensively Contextual**: Explain the complete problem space and solution rationale
+- **Be Extensively Searchable**: Use detailed titles and comprehensive tag sets (10+ tags minimum)
+
+### Code Example Requirements
+
+- **Always include before/after code examples** when showing improvements
+- **Provide multiple scenarios** when the pattern applies to different use cases
+- **Include complete function signatures** and import statements
+- **Show error handling** and edge case management
+- **Include configuration** and setup requirements
+
+### Performance and Impact Documentation
+
+- **Quantify improvements** with specific metrics when possible
+- **Document resource usage changes** (memory, CPU, network)
+- **Measure user experience impact** (load times, interaction responsiveness)
+- **Track development efficiency gains** (reduced bugs, faster implementation)
+
+### Before Storing
+
+Always search comprehensively to avoid duplicates:
+
+```bash
+memories search --query="your topic" --repo="relevant-repo"
+memories search --query="related concept"
+memories search --query="technology stack"
+```
+
+### Timing for Detailed Capture
+
+- **Store immediately** after discovering the insight while technical details are fresh
+- **Capture complete context** including failed approaches and why they didn't work
+- **Document the investigation process** that led to the solution
+- **Record all related code changes** and their interdependencies
+
+## 🚨 FINAL REMINDER - ABSOLUTE COMPLIANCE REQUIRED
+
+**CRITICAL**: This rule is FUNDAMENTAL to the agent's operation. Every response must end with memory evaluation. This is not optional, not a suggestion, and not a best practice - it is a MANDATORY REQUIREMENT.
+
+**COMPLIANCE CHECKLIST** (Must be completed before every response):
+
+- [ ] Evaluate if any technical solutions were discovered or applied
+- [ ] Check if any performance, security, or optimization issues were resolved
+- [ ] Assess if any codebase structure or business logic insights were gained
+- [ ] Determine if any reusable patterns or best practices were implemented
+- [ ] Consider if any non-trivial problems were solved that others might face
+- [ ] Search for duplicates before storing any new memories
+- [ ] Store comprehensive, detailed memories with full context and code examples
+
+**Remember**: The goal is to build comprehensive, searchable institutional knowledge that serves as complete technical documentation. Each memory should be detailed enough that a developer can implement the solution from the memory alone, without needing to rediscover the implementation details. This rule ensures that valuable insights are never lost and that the collective knowledge of the development team continues to grow and compound over time.
