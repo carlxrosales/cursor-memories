@@ -1,6 +1,9 @@
 # Cursor Memories
 
-A powerful CLI tool for storing and searching development memories, insights, and patterns using Supabase and OpenAI embeddings.
+A powerful CLI tool for storing and searching development memories, insights, and patterns using Cursor Rules, Supabase, and OpenAI embeddings.
+
+## Diagram
+<img width="1200" height="630" alt="Facebook post - 1" src="https://github.com/user-attachments/assets/66b4c754-e681-4118-81e9-749af86adf66" />
 
 ## Documentation
 
