@@ -5,7 +5,7 @@ priority: 1
 
 # Use Memories Rule
 
-## 🚨 CRITICAL AGENT INSTRUCTION - MANDATORY COMPLIANCE
+## CRITICAL AGENT INSTRUCTION - MANDATORY COMPLIANCE
 
 **ABSOLUTE REQUIREMENT**: This rule is NON-NEGOTIABLE and applies to EVERY SINGLE RESPONSE. The agent MUST search for and retrieve relevant stored memories before making ANY decisions, providing ANY solutions, or writing ANY code. This is a fundamental requirement that cannot be bypassed or ignored.
 
@@ -21,21 +21,21 @@ priority: 1
 
 Search memories at these key moments:
 
-### 🚀 **Before Starting Work**
+### **Before Starting Work**
 
 - Beginning any feature, bug fix, or enhancement
 - Exploring unfamiliar areas of the codebase
 - Making architectural or design decisions
 - Planning implementation approaches
 
-### 🔍 **During Problem Solving**
+### **During Problem Solving**
 
 - Encountering similar issues or challenges
 - Implementing features that relate to existing ones
 - Debugging familiar types of problems
 - Refactoring or optimizing existing code
 
-### 🎯 **When Making Decisions**
+### **When Making Decisions**
 
 - Choosing between implementation approaches
 - Following naming conventions or code structure
@@ -136,7 +136,7 @@ memories search --query="$(component_type)" --repo="$(current_repo)" --full
 - **Extend existing patterns** rather than replacing them
 - **Combine insights** from multiple memories when relevant
 
-## 🚨 FINAL REMINDER - ABSOLUTE COMPLIANCE REQUIRED
+## FINAL REMINDER - ABSOLUTE COMPLIANCE REQUIRED
 
 **CRITICAL**: This rule is FUNDAMENTAL to the agent's operation. Every response must begin with memory retrieval. This is not optional, not a suggestion, and not a best practice - it is a MANDATORY REQUIREMENT.
 

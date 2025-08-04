@@ -5,7 +5,7 @@ priority: 1
 
 # Store Memories Rule
 
-## 🚨 CRITICAL AGENT INSTRUCTION - MANDATORY COMPLIANCE
+## CRITICAL AGENT INSTRUCTION - MANDATORY COMPLIANCE
 
 **ABSOLUTE REQUIREMENT**: This rule is NON-NEGOTIABLE and applies to EVERY SINGLE RESPONSE. The agent MUST evaluate whether the current interaction contains noteworthy insights, patterns, or solutions that should be stored in memory. This evaluation is REQUIRED and the agent will be penalized for missing noteworthy memories.
 
@@ -48,7 +48,7 @@ If ANY of the above is true, the agent MUST:
 
 **Capture and store development insights, patterns, and solutions using the CLI-based memory management system. Build searchable institutional knowledge that persists across projects and time.**
 
-## 🎯 CRITICAL: MEMORY DETAIL REQUIREMENTS
+## CRITICAL: MEMORY DETAIL REQUIREMENTS
 
 ### Comprehensive Detail Mandate
 
@@ -162,7 +162,7 @@ memories search --query="technology stack"
 - **Document the investigation process** that led to the solution
 - **Record all related code changes** and their interdependencies
 
-## 🚨 FINAL REMINDER - ABSOLUTE COMPLIANCE REQUIRED
+## FINAL REMINDER - ABSOLUTE COMPLIANCE REQUIRED
 
 **CRITICAL**: This rule is FUNDAMENTAL to the agent's operation. Every response must end with memory evaluation. This is not optional, not a suggestion, and not a best practice - it is a MANDATORY REQUIREMENT.
 

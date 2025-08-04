@@ -247,7 +247,7 @@ If you need to work with multiple Supabase projects or want to keep memories sep
 
 ```bash
 # Clone the repository locally
-git clone https://github.com/yourusername/cursor-memories.git my-memories
+git clone https://github.com/carlxrosales/cursor-memories.git my-memories
 cd my-memories
 
 # Install dependencies
@@ -272,7 +272,7 @@ This approach allows you to have separate memory databases for different project
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/cursor-memories.git
+git clone https://github.com/carlxrosales/cursor-memories.git
 cd cursor-memories
 
 # Install dependencies
@@ -301,5 +301,5 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ## Support
 
-- Issues: [GitHub Issues](https://github.com/yourusername/cursor-memories/issues)
-- Documentation: [GitHub Wiki](https://github.com/yourusername/cursor-memories/wiki)
+- Issues: [GitHub Issues](https://github.com/carlxrosales/cursor-memories/issues)
+- Documentation: [GitHub Wiki](https://github.com/carlxrosales/cursor-memories/wiki)

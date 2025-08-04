@@ -39,12 +39,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/youngestbllnr/cursor-memories.git"
+    "url": "git+https://github.com/carlxrosales/cursor-memories.git"
   },
   "bugs": {
-    "url": "https://github.com/youngestbllnr/cursor-memories/issues"
+    "url": "https://github.com/carlxrosales/cursor-memories/issues"
   },
-  "homepage": "https://github.com/youngestbllnr/cursor-memories#readme",
+  "homepage": "https://github.com/carlxrosales/cursor-memories#readme",
   "engines": {
     "node": ">=18.0.0"
   },
