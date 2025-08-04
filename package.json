@@ -1,6 +1,6 @@
 {
   "name": "cursor-memories",
-  "version": "2.1.7",
+  "version": "2.1.8",
   "description": "A CLI tool for storing and searching development memories, insights, and patterns using Supabase and OpenAI embeddings",
   "main": "index.js",
   "type": "module",
